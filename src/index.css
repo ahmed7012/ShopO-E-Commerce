@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat+Alternates:ital,wght@1,300&display=swap');
+
+body {
+  font-family: 'Montserrat Alternates' , cursive;
+  background-color: #F8F8F8;
+  padding-top: 75px; 
+
+}
+
+/* ? gister form */
+
+.register{
+  background: url('../src/img/light-patten.svg');
+  background-size: cover;
+}
+
+.sign-up {
+  margin: auto;
+  background-color: #151C24;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.sign-up input {  
+  border: none;
+}
+
+
+.input-icons i {
+  position: absolute;
+  
+}
+
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+
+
+
+
+
+/* ! navbar */
+.nav-style,footer{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.error-style {
+  background-color: #163A42;
+}
+.error-style img {
+  width: 40%;
+}
+.nav-item {
+  padding: 5px ;
+}
+
+@media screen and (min-width : 1024px) {
+  .nav-item { text-transform:uppercase; }
+  .nav-item:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .nav-item:hover:after { transform: scaleX(1); }
+  .nav-item.fromRight:after{ transform-origin:100% 50%; }
+  .nav-item.fromLeft:after{  transform-origin:  0% 50%; }
+  
+  .nav-item-icon:hover{
+    background-color: #FF497C;
+    transition: all 0.5s;
+    border-radius: 50%;
+  }
+}
+
+
+
+.nav-item-icon {
+  padding: 5px;
+}
+
+
+.logout {
+  cursor: pointer;
+}
+
+
+/* ! footer */
+
+
+
+
+/*! home */
+
+
+.item-home {
+  /* border: 1px solid gray; */
+}
+.pro-desc .pro-title {
+  color: grey;
+}
+.pro-desc .pro-title:hover {
+  color: #1868D4;
+}
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  right: 0;
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.parent:hover .overlay {
+  opacity: 1;
+}
+.home-btn , .home-btn:hover {
+  background-color: #FF497C;
+  color: white;
+}
+
+
+
+.rating {
+  width: fit-content;
+}
+.home-succMsg {
+  z-index: 555;
+}
+
+.brand-slid {
+  width: 90%;
+}
+
+.last-home {
+  background: url('./img/cyber-monday-shopping-sales.jpg');
+  background-size: 100% 100%;
+
+}
+
+/* !cart */
+.remove-cart {
+  color: #E07E1B;
+  background-color: #FCDBB9;
+}
+.remove-cart:hover {
+  background-color: #FCDBB9;
+  color: #E07E1B;
+  
+}
+
+.check-btn {
+  background-color: #E07E1B;
+  color: white;
+  font-weight: bold;
+}
+.check-btn:hover {
+  background-color: #E07E1B;
+  color: white;
+}
+
+.in-dec button {
+  background-color: #E07E1B;
+  color: white;
+  font-weight: bold;
+}
+.in-dec button:hover {
+  background-color: #E07E1B;
+  color: white;
+}
+
+/*  ! pro Detaisl */
+
+.deliver {
+  border: 1px solid gray;
+}
+.deliver-2 {
+  border-top: 1px solid gray;
+}
+.deliver i {
+  color: #E07E1B;
+}
